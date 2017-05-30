@@ -38,4 +38,13 @@
     </fieldset>
     {{ Form::close() }}
 
+
+    <fieldset>
+        <h1>Logar com :</h1>
+    <a href="{{route('auth.social','facebook')}}" class="fa fa-facebook"></a>
+    <a href="{{route('auth.social','twitter')}}" class="fa fa-twitter"></a>
+    <a href="{{route('auth.social','google')}}" class="fa fa-google"></a>
+    </fieldset>
+
+
 @endsection

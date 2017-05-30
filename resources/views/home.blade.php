@@ -84,6 +84,9 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="{{URL::to('login')}}" class="active"><i class="fa fa-dashboard fa-fw"></i>sair</a>
+                    </li>
                 </ul>
 
             </div>

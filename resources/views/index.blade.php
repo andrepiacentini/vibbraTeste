@@ -17,6 +17,45 @@
  {{--   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
 --}}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .title {
+            font-size: 96px;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            margin-top: 10px;
+
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+
+
+    </style>
 </head>
 <body>
 <div class="container">

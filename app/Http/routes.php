@@ -21,8 +21,12 @@ Route::post('loginStore',             ['as' => 'login.store',               'use
 Route::get('cadastro',                ['as' => 'cadastro.view',             'uses'    => 'CadastroController@create']);
 Route::post('cadastroStore',          ['as' => 'cadastro.store',            'uses'    => 'CadastroController@store']);
 
+Route::get('auth/{provider}',           ['as' => 'auth.social',          'uses'    => 'LoginController@redirectToProvider']);
+Route::get('auth/{provider}/callback',  ['as' => 'auth.callback',        'uses'    => 'LoginController@handleProviderCallback']);
 
 Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('logout',                    ['as' => 'logout',                    'uses'    => 'LoginController@logout']);
 
     Route::get('home',                      ['as' => 'home.home',                 'uses'    => 'HomeController@create']);
     Route::get('estabelecimento',           ['as' => 'estabelimento.view',        'uses'    => 'EstabelecimentoController@create']);
